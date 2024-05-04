@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layoutDescription="@xml/motion"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".DetailActivity"
+        tools:showIn="@layout/activity_detail">
+
+        <TextView
+            android:id="@+id/txtFileNameTitle"
+            style="@style/DetailTitle"
+            android:text="@string/file_name" />
+
+        <TextView
+            android:id="@+id/txtFileNameDescription"
+            style="@style/DetailDescription"
+            tools:text="@string/download_option_1" />
+
+        <TextView
+            android:id="@+id/txtStatusTitle"
+            style="@style/DetailTitle"
+            android:text="@string/status" />
+
+        <TextView
+            android:id="@+id/txtStatusDescription"
+            style="@style/DetailDescription"
+            tools:text="Success" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="@android:string/ok"
+            android:textColor="@android:color/white" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>
